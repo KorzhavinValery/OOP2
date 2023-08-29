@@ -5,6 +5,6 @@ public class Bicycle extends Vehicles {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем колесо велосипеда!");
     }
 }
