@@ -12,4 +12,11 @@ public class Car extends Vehicles {
         System.out.println("Проверяем двигатель");
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "modelName='" + modelName + '\'' +
+                ", wheelsCount=" + wheelsCount +
+                '}';
+    }
 }

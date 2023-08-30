@@ -14,4 +14,12 @@ public class Truck extends  Vehicles{
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+
+    @Override
+    public String toString() {
+        return "Truck{" +
+                "modelName='" + modelName + '\'' +
+                ", wheelsCount=" + wheelsCount +
+                '}';
+    }
 }
