@@ -13,15 +13,9 @@ public class Main {
         Bicycle bicycle2 = new Bicycle("Velik2", 2);
 
         ServiceStation serviceStationForClients = new ServiceStationForClients();
-        ServiceStation serviceStationForOwners = new ServiceStationForOwners();
+        serviceStationForClients.check(car);
+        serviceStationForClients.check(bicycle2);
+        serviceStationForClients.check(truck2);
 
-        serviceStationReport(serviceStationForClients, car, bicycle, truck);
-        serviceStationReport(serviceStationForOwners, car2, bicycle2, truck2);
-    }
-
-    private static void serviceStationReport(ServiceStation serviceStation, Car car, Bicycle bicycle, Truck truck) {
-        serviceStation.check(car);
-        serviceStation.check(bicycle);
-        serviceStation.check(truck);
     }
 }

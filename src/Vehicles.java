@@ -24,11 +24,16 @@ public class Vehicles {
         System.out.println("Проверяем прицеп");
     }
 
+    public void service() {
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
+    }
+
     @Override
     public String toString() {
         return "Vehicles{" +
-                "modelName='" + modelName + '\'' +
-                ", wheelsCount=" + wheelsCount +
-                '}';
+                "modelName= " + modelName +
+                ", wheelsCount= " + wheelsCount;
     }
 }

@@ -4,15 +4,14 @@ public class Bicycle extends Vehicles {
         super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем колесо велосипеда!");
+    public void service(){
+        super.service();
     }
 
     @Override
     public String toString() {
-        return "Bicycle{" +
-                "modelName='" + modelName + '\'' +
-                ", wheelsCount=" + wheelsCount +
-                '}';
+        return "Bicycle " +
+                "modelName= " + modelName +
+                ", wheelsCount= " + wheelsCount;
     }
 }

@@ -3,23 +3,24 @@ public class Truck extends  Vehicles{
         super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
+
+
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+    @Override
+    public void service() {
+        super.service();
+        checkEngine();
+        checkTrailer();
+    }
 
     @Override
     public String toString() {
-        return "Truck{" +
-                "modelName='" + modelName + '\'' +
-                ", wheelsCount=" + wheelsCount +
-                '}';
+        return "Truck " +
+                "modelName= " + modelName +
+                ", wheelsCount= " + wheelsCount;
     }
 }
